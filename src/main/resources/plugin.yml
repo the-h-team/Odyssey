@@ -1,0 +1,6 @@
+name: Groups
+version: ${project.version}
+main: com.github.sanctum.permissions.Groups
+api-version: 1.16
+depend: [ Labyrinth ]
+authors: [ Hempfest ]
