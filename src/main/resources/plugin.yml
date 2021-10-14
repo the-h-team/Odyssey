@@ -1,6 +1,6 @@
-name: Groups
+name: Odyssey
 version: ${project.version}
-main: com.github.sanctum.permissions.Groups
+main: com.github.sanctum.permissions.OdysseyBukkitPlugin
 api-version: 1.16
 depend: [ Labyrinth ]
 authors: [ Hempfest ]

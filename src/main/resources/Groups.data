@@ -1,0 +1,34 @@
+{
+  "Default": {
+    "default": true,
+    "permissions": [
+      "clanspro",
+      "your.permission.node"
+    ],
+    "inheritance": []
+  },
+
+  "Moderator": {
+    "permissions": [
+      "clanspro",
+      "your.permission.node"
+    ],
+    "inheritance": ["Default"]
+  },
+
+  "Admin": {
+    "permissions": [
+      "clanspro",
+      "your.permission.node"
+    ],
+    "inheritance": ["Default", "Moderator"]
+  },
+
+  "Owner": {
+    "permissions": [
+      "clanspro",
+      "your.permission.node"
+    ],
+    "inheritance": ["Default", "Admin"]
+  }
+}

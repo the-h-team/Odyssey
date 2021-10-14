@@ -1,13 +1,12 @@
 package com.github.sanctum.permissions.api;
 
-import com.github.sanctum.labyrinth.data.LabyrinthUser;
 import java.util.List;
 
-public interface GroupInformation {
+public interface GroupInheritance {
 
-	Permissible<String> getPrimary();
+	Permissible<String> getPrimary(String world);
 
-	List<Permissible<String>> getSecondary();
+	List<Permissible<String>> getSecondary(String world);
 
 	boolean has(String permission);
 
@@ -20,7 +19,5 @@ public interface GroupInformation {
 	boolean take(String group);
 
 	boolean take(String group, String world);
-
-	LabyrinthUser getUser();
 
 }

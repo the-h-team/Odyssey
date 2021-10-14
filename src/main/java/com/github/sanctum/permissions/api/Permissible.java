@@ -1,11 +1,12 @@
 package com.github.sanctum.permissions.api;
 
 import java.util.List;
-import java.util.function.Supplier;
 
 public interface Permissible<T> {
 
-	Supplier<T> getAttachment();
+	T getAttachment();
+
+	GroupInheritance getInheritance();
 
 	boolean has(String node);
 
@@ -22,6 +23,10 @@ public interface Permissible<T> {
 	boolean inherit(Permissible<String> permissible);
 
 	boolean inherit(Permissible<String> permissible, String world);
+
+	boolean deprive(Permissible<String> permissible);
+
+	boolean deprive(Permissible<String> permissible, String world);
 
 	List<String> getNodes();
 
